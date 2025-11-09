@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-local Window = Rayfield:CreateWindow({
+local MainWindow = Rayfield:CreateWindow({
    Name = "Sentry",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Sentry Interface",
@@ -37,7 +37,9 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Section = PlayerTab:CreateSection("Player")
+local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+
+local PlayerSection = PlayerTab:CreateSection("Movement")
 
 local PlayerSlider = Tab:CreateSlider({
     Name = "WalkSpeed",
