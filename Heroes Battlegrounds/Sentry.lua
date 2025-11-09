@@ -37,7 +37,7 @@ local MainWindow = Rayfield:CreateWindow({
    }
 })
 
-local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+local PlayerTab = MainWindow:CreateTab("Player", 4483362458) -- Title, Image
 
 local PlayerSection = PlayerTab:CreateSection("Movement")
 
